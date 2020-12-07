@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "51f5cf41-10e7-4545-a932-abc1d0b456bc",
+		"name": "rgb final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rgb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?r=200&g=200&b=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "200"
+						},
+						{
+							"key": "g",
+							"value": "200"
+						},
+						{
+							"key": "b",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?r=<?php echo hello world ?>&g=200&b=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "<?php echo hello world ?>"
+						},
+						{
+							"key": "g",
+							"value": "200"
+						},
+						{
+							"key": "b",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?R=200&G=200&B=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "R",
+							"value": "200"
+						},
+						{
+							"key": "G",
+							"value": "200"
+						},
+						{
+							"key": "B",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?html=<?php echo hello world ?>&php=200&css=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "html",
+							"value": "<?php echo hello world ?>"
+						},
+						{
+							"key": "php",
+							"value": "200"
+						},
+						{
+							"key": "css",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?r=200&g=if&b=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "200"
+						},
+						{
+							"key": "g",
+							"value": "if"
+						},
+						{
+							"key": "b",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "test6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?r=200&g=200&=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "200"
+						},
+						{
+							"key": "g",
+							"value": "200"
+						},
+						{
+							"key": "",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://autumnirvin.me/rgbfinal/v1.0/final.php?r=200&b=200",
+					"protocol": "https",
+					"host": [
+						"autumnirvin",
+						"me"
+					],
+					"path": [
+						"rgbfinal",
+						"v1.0",
+						"final.php"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "200"
+						},
+						{
+							"key": "g",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "b",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
