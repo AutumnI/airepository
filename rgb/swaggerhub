@@ -1,0 +1,96 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "RGB To HEX",
+    "description": "This is a Color Conversion",
+    "contact": {
+      "email": "ai00877@georgiasouthern.edu"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://virtserver.swaggerhub.com/AutumnI/RGBToHEX/1.0.0",
+      "description": "SwaggerHub API Auto Mocking"
+    },
+    {
+      "url": "https://autumnirvin.me/rgbfinal/v1.0/",
+      "description": "final website"
+    }
+  ],
+  "tags": [
+    {
+      "name": "public",
+      "description": "Publicly accessible endpoints"
+    },
+    {
+      "name": "developers",
+      "description": "Operations available to regular developers"
+    }
+  ],
+  "paths": {
+    "/final.html": {
+      "get": {
+        "tags": [
+          "public"
+        ],
+        "summary": "converts rgb to hex",
+        "operationId": "rgb",
+        "parameters": [
+          {
+            "name": "R",
+            "in": "query",
+            "description": "red",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "G",
+            "in": "query",
+            "description": "green",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "B",
+            "in": "query",
+            "description": "blue",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "hex result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "number"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          }
+        }
+      }
+    }
+  }
+}
