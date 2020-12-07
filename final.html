@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>RGB To HEX</title>
+        <meta charset="UTF-8" name="author" content="Autumn Irvin">
+        <!-- <script type="text/javascript" src="js/jscript.js"></script> -->
+ 
+</head>
+	<body> 
+	  <div class = "controls">
+		<input type = "range" min = "0" max = "255" value= "0" onchange = "document.getElementById('redValEl').value = this.value; 	convert();"> 
+		Red: <input id = "redValEl" type = "text" value = "0"><br><br>
+		<input type = "range" min = "0" max = "255" value= "0" onchange = "document.getElementById('greenValEl').value = this.value; convert();"> 
+		Green: <input id = "greenValEl" type = "text" value = "0"><br><br>
+		<input type = "range" min = "0" max = "255" onchange = "document.getElementById('blueValEl').value = this.value;
+		convert();">
+		Blue: <input id = "blueValEl" type = "text" value = "0"><br><br>
+		
+		
+		<input id = "hexaValue" type = "text" value = "#000000">
+		</div>
+		
+		<div id = "rgb" style = "width: 100px; height: 100px;"></div>
+		<div id = "hex" style = "width: 100px; height: 100px;"></div>
+
+		<script type = "text/javascript">
+		
+			var redValEl = document.getElementById('redValEl');
+			var greenValEl = document.getElementById('greenValEl');
+			var blueValEl = document.getElementById('blueValEl');
+			var hexaValEl = document.getElementById('hexaValue');
+			
+			var rgb = document.getElementById('rgb');
+			var hex = document.getElementById('hex');
+		
+			function convert(){
+				var red = redValEl.value;
+				var green = greenValEl.value;
+				var blue = blueValEl.value;
+				
+				var hexaColorCode = "#" + getHexa(red) + getHexa(green) + getHexa(blue);
+				hexaValue.value = hexaColorCode;
+				
+				<!-- rgb.style.background = "rgb(${red}, ${green}, ${blue})"; -->
+				<!-- hex.style.background = hexaColorCode; -->
+				};
+			
+			function getHexa(value){
+				var hexa = parseInt(value).toString(16);
+				return hexa.length == 1 ? "0" + hexa : hexa; 		
+		}
+		</script>		
+	</body>
+</html>
